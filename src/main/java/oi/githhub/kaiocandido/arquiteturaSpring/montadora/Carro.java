@@ -8,9 +8,6 @@ public class Carro {
     private Motor motor;
     private Montadora montadora;
 
-
-    public Carro(){}
-
     public Carro(String modelo, Color cor, Motor motor, Montadora montadora) {
         this.modelo = modelo;
         this.cor = cor;
@@ -19,6 +16,7 @@ public class Carro {
     }
 
     public Carro(Motor motor) {
+        this.motor = motor;
     }
 
     public String getModelo() {
