@@ -4,11 +4,13 @@ import oi.githhub.kaiocandido.arquiteturaSpring.montadora.Motor;
 import oi.githhub.kaiocandido.arquiteturaSpring.montadora.TipoMotor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class MontadoraConfiguration {
 
     @Bean(name = "aspirado")
+
     public Motor motorAspirado(){
         var motor = new Motor();
         motor.setCavalos(120);
@@ -30,6 +32,7 @@ public class MontadoraConfiguration {
         return motor;
     }
 
+    @Primary
     @Bean(name = "turbo")
     public Motor motorTurbo(){
         var motor = new Motor();
