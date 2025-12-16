@@ -14,4 +14,6 @@ public class HondaHRV extends Carro{
         setMontadora(montadora.HONDA);
     }
 
+    public HondaHRV(Motor motor) {
+    }
 }
