@@ -17,6 +17,7 @@ public class ArquiteturaSpringApplication {
 		SpringApplicationBuilder builder = new SpringApplicationBuilder(ArquiteturaSpringApplication.class);
 		builder.bannerMode(Banner.Mode.OFF);
 		builder.profiles("producao");
+		builder.lazyInitialization(false); //dessa forma todos são lazy por padrão
 
 		builder.run(args);
 

@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: arquiteturaSpring
+  jpa:
+    show_sql: true
+  main:
+    lazy-initialization: false
+
