@@ -26,6 +26,9 @@ public class ArquiteturaSpringApplication {
 		ConfigurableEnvironment environment = applicationContext.getEnvironment();
 		String nameApp = environment.getProperty("spring.application.name");
 		System.out.println("Nome: " + nameApp);
+
+		ExemploValue value = applicationContext.getBean(ExemploValue.class);
+		value.imprimir();
 	}
 
 }
